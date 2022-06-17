@@ -1,13 +1,14 @@
 <?php 
-namespace src\common;
+namespace crud;
 abstract class CRUD{
-    public $host = '127.0.0.1';
-    public $db   = 'syndicutxdb';
-    public $user = 'root';
-    public $password = '';
-    public $port = "3306";
-    public $charset = 'utf8mb4';
-    public static function connect(){
+    
+    public  function connect(){
+        $host = '127.0.0.1';
+        $db   = 'ecommerce';
+        $user = 'root';
+        $password = '';
+        $port = "3306";
+        $charset = 'utf8mb4';
         $options = [
             \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
             \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
@@ -23,8 +24,8 @@ abstract class CRUD{
         }
         return $pdo;
     }
-    public abstract function read($pdo,$query);
-    public abstract function create($pdo,$query);
-    public abstract function delete($pdo,$query);
-    public abstract function update($pdo,$query);
+    public abstract function read($pdo,$sql);
+    public abstract function create($pdo,$sql);
+    public abstract function delete($pdo,$sql);
+    public abstract function update($pdo,$sql);
 }
