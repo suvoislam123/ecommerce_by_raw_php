@@ -1,7 +1,8 @@
 {
     "autoload": {
         "psr-4":{
-            "crud\\":"/src/crud"
+            "crud\\":"/src/crud",
+            "utility\\":"/src/utility"
         }
     }
 }
