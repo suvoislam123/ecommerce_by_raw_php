@@ -1146,7 +1146,7 @@ $all_slider = $slider->read($pdo,$r);
         <div id="hero">
           <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
             <?php foreach($all_slider as $slider){  ?>
-            <div class="item" style="background-image: url(<?= $slider['image_path']?>);">
+            <div class="item" style="background-image:url(<?=$_SERVER['HTTP_HOST']."/ecommerce/assets/images/sliders/".$slider['image_path']?>);">
               <div class="container-fluid">
                 <div class="caption bg-color vertical-center text-left">
                   <div class="slider-header fadeInDown-1"><?= $slider['title_short_txt'] ?></div>

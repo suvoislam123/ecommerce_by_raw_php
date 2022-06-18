@@ -2,7 +2,7 @@
 namespace crud;
 abstract class CRUD{
     
-    public  function connect(){
+    public static function connect(){
         $host = '127.0.0.1';
         $db   = 'ecommerce';
         $user = 'root';
