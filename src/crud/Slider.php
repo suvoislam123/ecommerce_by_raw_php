@@ -3,10 +3,7 @@ namespace crud;
 include_once("CRUD.php");
 use crud\CRUD;
 class Slider extends CRUD{
-    public function shuvo(){
-        echo "Hello World shuvo";
-        
-    }
+    
     public function create($pdo,$sql){
         
     }
@@ -21,6 +18,7 @@ class Slider extends CRUD{
 
     }
     public function update($pdo,$sql){
+        
 
     }
     public function delete($pdo,$sql){
