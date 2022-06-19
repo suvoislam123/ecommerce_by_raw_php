@@ -32,7 +32,7 @@ $all_product = $product_obj->read($pdo,$all_product_query);
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="detail.html"><img  src="../../assets/images/products/<?=$product['picture'] ?>" alt=""></a> </div>
+                          <div class="image"> <a href="detail.html"><img  src="../../assets/images/products/<?=$product['image'] ?>" alt=""></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>

@@ -3,7 +3,7 @@ namespace crud;
 include_once("CRUD.php");
 use crud\CRUD;
 class Product extends CRUD{
-    public function create($pdo,$sql){
+    public function create($pdo,$sql,$data){
 
     }
     public function read($pdo,$sql){
@@ -15,7 +15,7 @@ class Product extends CRUD{
             echo "You dont have any result";
         }
     }
-    public function delete($pdo,$sql){
+    public function delete($pdo,$id){
 
     }
     public function update($pdo,$sql){

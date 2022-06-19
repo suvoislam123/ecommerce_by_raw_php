@@ -4,7 +4,7 @@ abstract class CRUD{
     
     public static function connect(){
         $host = '127.0.0.1';
-        $db   = 'ecommerce';
+        $db   = 'ecommerce_main';
         $user = 'root';
         $password = '';
         $port = "3306";
@@ -24,8 +24,11 @@ abstract class CRUD{
         }
         return $pdo;
     }
+    public static function redirect($url){
+        header('location:'.$url);
+    }
     public abstract function read($pdo,$sql);
-    public abstract function create($pdo,$sql);
-    public abstract function delete($pdo,$sql);
+    public abstract function create($pdo,$sql,$data);
+    public abstract function delete($pdo,$id);
     public abstract function update($pdo,$sql);
 }
